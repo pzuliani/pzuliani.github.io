@@ -1,0 +1,31 @@
+
+<html>
+<head>
+<title>Paolo Zuliani, Newcastle University</title>
+</head>
+
+<body>
+
+  <b> Cellular Automaton: ca</b>
+
+  <p>
+
+    <b>ca</b> is a parallel simulator for the rhombic dodecahedron cellular automaton, developed by myself for my <i>Laurea</i> degree thesis back in 1996-97. It has been applied to 3D fluid-dynamics simulation. Basically, instead of solving numerically the Navier-Stokes equations, one simulates a cellular automaton whose behaviour closely approximates a solution to such equations. (This approach is called <a href="https://en.wikipedia.org/wiki/Lattice_gas_automaton" target="_blank">Lattice Gas Automata</a>.)
+  </p>
+  <p>
+    Most work in the area focused on 2D cellular automata, in particular the <a href="https://en.wikipedia.org/wiki/Lattice_gas_automaton#Hexagonal_grids" target="_blank">FHP model</a>. I wanted to do 3D fluid simulation, so I have worked on the dodecahedron 3D cellular automaton. The software has been implemented in C on the <a href="https://en.wikipedia.org/wiki/Cray_T3E" target="_blank">Cray T3E</a> parallel computer, using the <a href="http://openshmem.org/" target="_blank">shmem</a> library for fast shared memory access. It also uses the <a href="https://www.hdfgroup.org/" target="_blank">HDF</a> library for simulation data storage (and to solve <a href="https://en.wikipedia.org/wiki/Endianness" target="_blank">endianness</a> problems).
+</p>
+<p>
+<b>Downloads</b>
+<ul>
+    <li>My Laurea thesis (in Italian, but I may translate parts of it if anybody is interested).
+    <li>C <a href="ca_v1.0.zip">source code</a> for the simulator suite.
+</ul>
+
+
+
+
+<a href="https://pzuliani.github.io/">Home</a>
+
+</body>
+</html>
